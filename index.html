@@ -3,12 +3,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>나의 웹사이트</title>
-<style>
-body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;background:#fafafa;color:#222;line-height:1.6}
-main{max-width:760px;margin:0 auto;padding:24px 16px}
-</style>
 <style data-studio="css">
-:root{--st-accent:#e2557a}
+:root{--st-accent:#3b82f6}
 .st-nav{position:sticky;top:0;z-index:50;width:100%;box-sizing:border-box;background:#fff;background:rgba(255,255,255,.93);backdrop-filter:blur(6px);border-bottom:1px solid rgba(0,0,0,.08)}
 .st-nav-in{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px 12px;max-width:960px;margin:0 auto}
 .st-nav-a{display:inline-block;padding:8px 14px;border-radius:999px;text-decoration:none;color:#333;font-weight:700;font-size:15px;line-height:1.2}
@@ -148,40 +144,89 @@ html.st-dark img,html.st-dark video,html.st-dark iframe,html.st-dark canvas{filt
 .st-editing .st-prev,.st-editing .st-next{display:none}
 .st-editing dialog.st-modal{display:block;position:static;margin:12px auto;outline:2px dashed rgba(0,0,0,.25)}
 .st-editing .st-embed iframe{pointer-events:none}
-</style></head>
-<body>
-<nav class="st-nav" data-studio="nav">
-  <div class="st-nav-in">
-    <a class="st-nav-a is-on" href="index.html">홈</a>
-    <a class="st-nav-a" href="hong.html">홍균 사진</a>
+</style>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap");body{margin:0;line-height:1.7;word-break:keep-all;overflow-wrap:break-word;-webkit-text-size-adjust:100%}main{max-width:760px;margin:0 auto;padding:20px 14px 40px}*{box-sizing:border-box}img{max-width:100%}html{background:#fffef5}body.tp-note{background:repeating-linear-gradient(transparent 0,transparent 31px,#cfe3f5 31px,#cfe3f5 32px);background-color:#fffef5;color:#334155;font-family:"Gaegu","Noto Sans KR",sans-serif;font-size:1.25rem;line-height:32px}
+.tp-note main{border-left:3px solid #f4a3a3;padding-left:18px}
+.tp-note .st-h{font-family:"Gaegu",sans-serif;font-weight:700;line-height:1.3;color:#1e3a8a}.tp-note .st-sec>.st-h{display:inline;background:linear-gradient(transparent 58%,#fff176 58%)}
+.tp-note .st-hero{background:none;text-align:left;padding:30px 0}.tp-note .st-hero .st-h{font-size:2.4rem;display:block;background:none}
+.tp-note .st-p{line-height:32px;margin:0 0 32px}.tp-note .st-btn{border-radius:8px;line-height:1.2}
+.tp-note .st-cards{gap:16px}.tp-note .st-card{background:#fff59d;border:0;border-radius:2px;box-shadow:3px 4px 8px rgba(0,0,0,.15);line-height:1.5;transform:rotate(-1deg)}
+.tp-note .st-card:nth-child(2){background:#b9f6ca;transform:rotate(1deg)}.tp-note .st-card:nth-child(3){background:#ffccbc}.tp-note .st-sec{margin:32px auto}
+</style>
+</head>
+<body class="tp-note">
+<main>
+<section class="st-hero"><h1 class="st-h">📒 나의 공부 노트</h1>
+<section class="st-sec st-split">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHb3PekrzsLeF03xKkn-CC8I7ZVDbLzhdJ_I_po4JyqQ&amp;s=10" alt="asd" style="width: 100%; max-width: 100%; height: auto;">
+  <div>
+    <h2 class="st-h">홍균냥이</h2>
+    <p class="st-p" style="font-size: 2.2rem;">T1의 미드라이너 홍균</p>
   </div>
-</nav>
-
-<main style="background-color: rgb(61, 249, 36);">
-<h1 class="st-h">홍균 방명록 (홍명록)</h1>
-
-<p class="st-p">홍명보</p>
-</main>
-<div class="st-dset" style="background-color: rgb(245, 158, 213);">
-  <form class="st-sec st-dform" data-st="dform" data-tab="방명록" data-api="https://script.google.com/macros/s/AKfycbyN1YjwUecGyPvCAZLVlAO2rFglc7ucsTMckVgC1yMIBcenrGXQ0RPCQMSjUVdxxGY/exec">
-    <h2 class="st-h">방명록 남기기</h2>
-    <label class="st-fl"><span>이름</span><input name="이름" required="" placeholder="예: 민수" type="text" maxlength="100"></label>
-    <label class="st-fl"><span>내용</span><textarea name="내용" required="" placeholder="하고 싶은 말을 남겨요" maxlength="500"></textarea></label>
+</section><p class="st-p" style="font-size: 2.2rem; border-width: 4px; border-style: solid; font-weight: 900; border-color: rgb(255, 0, 0);">주챔프: 가렌 / 티모 / 하이머딩거</p><a class="st-btn" href="#today">오늘 필기</a></section>
+<section class="st-sec" id="today"><h2 class="st-h">오늘 배운 내용</h2><p class="st-p">핵심 내용을 공책에 필기하듯 써 보세요. 중요한 건 형광펜처럼 꾸며요.</p></section>
+<section class="st-sec"><h2 class="st-h">포스트잇 메모</h2><div class="st-cards"><div class="st-card"><p class="st-ico">📌</p><h3 class="st-h">외울 것</h3><p class="st-p">핵심 단어</p></div><div class="st-card"><p class="st-ico">❓</p><h3 class="st-h">궁금한 것</h3><p class="st-p">질문 쓰기</p></div><div class="st-card"><p class="st-ico">✅</p><h3 class="st-h">할 일</h3><p class="st-p">숙제 확인</p></div></div></section><p class="st-foot">— 오늘도 수고했어 —</p>
+<div class="st-dset">
+  <form class="st-sec st-dform" data-st="dform" data-tab="평점" data-api="https://script.google.com/macros/s/AKfycbxNySsIoj56Tihu5FfLpKPdc-dL04_Sb3jjz2s91q4zmnEGEnWiijH5owYNgE-YJPdncw/exec">
+    <h2 class="st-h">별점 남기기</h2>
+    <label class="st-fl"><span>항목</span><input name="항목" required="" type="text" maxlength="100">
+<div class="st-dset">
+  
+    <h2 class="st-h">오늘의 기분</h2>
+    <label class="st-fl"><span>날짜</span><input name="날짜" required="" type="date" data-today=""></label>
+    <div class="st-fl" role="radiogroup" aria-label="기분" data-kind="chips">
+      <span>기분</span>
+      <div class="st-rg">
+        <label><input type="radio" name="기분" value="😀" required=""><span>😀</span></label>
+        <label><input type="radio" name="기분" value="🙂" required=""><span>🙂</span></label>
+        <label><input type="radio" name="기분" value="😐" required=""><span>😐</span></label>
+        <label><input type="radio" name="기분" value="😢" required=""><span>😢</span></label>
+        <label><input type="radio" name="기분" value="😡" required=""><span>😡</span></label>
+      </div>
+    </div>
+    <label class="st-fl"><span>컨디션</span><div class="st-uw"><input name="컨디션" type="range" min="1" max="10" step="1" value="6"><output class="st-rv"></output></div></label>
+    <div class="st-fl" role="radiogroup" aria-label="운동했나요" data-kind="yn">
+      <span>운동했나요</span>
+      <div class="st-rg">
+        <label><input type="radio" name="운동했나요" value="예"><span>예</span></label>
+        <label><input type="radio" name="운동했나요" value="아니오"><span>아니오</span></label>
+      </div>
+    </div>
+    <label class="st-fl"><span>한 줄 메모</span><input name="한 줄 메모" placeholder="오늘 있었던 일" type="text" maxlength="100"></label>
     <button class="st-btn st-sub" type="submit">저장하기</button>
     <p class="st-fmsg" aria-live="polite"></p>
-  </form>
-  <section class="st-sec st-dlist" data-st="dlist" data-tab="방명록" data-api="https://script.google.com/macros/s/AKfycbyN1YjwUecGyPvCAZLVlAO2rFglc7ucsTMckVgC1yMIBcenrGXQ0RPCQMSjUVdxxGY/exec" data-show="이름,내용,createdAt" data-view="bubble" data-sort="createdAt" data-desc="1" data-limit="20" data-search="">
+  
+  <section class="st-sec st-dlist" data-st="dlist" data-tab="기분기록" data-api="https://script.google.com/macros/s/AKfycbxNySsIoj56Tihu5FfLpKPdc-dL04_Sb3jjz2s91q4zmnEGEnWiijH5owYNgE-YJPdncw/exec" data-show="날짜,기분,컨디션,운동했나요,한 줄 메모" data-view="table" data-sort="날짜" data-desc="1" data-limit="20">
     <div class="st-dl-top">
-      <h2 class="st-h">친구들이 남긴 글</h2>
+      <h2 class="st-h">기분 기록</h2>
       <button class="st-dl-rf" type="button">↻ 새로고침</button>
     </div>
     <div class="st-dl-out" aria-live="polite"></div>
   </section>
-  <section class="st-sec st-dstat" data-st="dstat" data-tab="방명록" data-api="https://script.google.com/macros/s/AKfycbyN1YjwUecGyPvCAZLVlAO2rFglc7ucsTMckVgC1yMIBcenrGXQ0RPCQMSjUVdxxGY/exec" data-calc="count" data-unit="개">
-    <h2 class="st-h">지금까지 남긴 글</h2>
+  <section class="st-sec st-dstat" data-st="dstat" data-tab="기분기록" data-api="https://script.google.com/macros/s/AKfycbxNySsIoj56Tihu5FfLpKPdc-dL04_Sb3jjz2s91q4zmnEGEnWiijH5owYNgE-YJPdncw/exec" data-calc="avg" data-field="컨디션" data-group="기분" data-unit="점">
+    <h2 class="st-h">기분별 평균 컨디션</h2>
+    <div class="st-ds-out" aria-live="polite"></div>
+  </section>
+</div></label></form>
+    <label class="st-fl"><span>별점</span><select name="별점" required="" data-kind="rating"><option value="5">★★★★★ (5)</option><option value="4">★★★★☆ (4)</option><option value="3">★★★☆☆ (3)</option><option value="2">★★☆☆☆ (2)</option><option value="1">★☆☆☆☆ (1)</option></select></label>
+    <label class="st-fl"><span>한 줄 평</span><input name="한 줄 평" type="text" maxlength="100"></label>
+    <button class="st-btn st-sub" type="submit">저장하기</button>
+    <p class="st-fmsg" aria-live="polite"></p>
+  
+  <section class="st-sec st-dlist" data-st="dlist" data-tab="평점" data-api="https://script.google.com/macros/s/AKfycbxNySsIoj56Tihu5FfLpKPdc-dL04_Sb3jjz2s91q4zmnEGEnWiijH5owYNgE-YJPdncw/exec" data-show="항목,별점,한 줄 평,createdAt" data-view="card" data-sort="createdAt" data-desc="1" data-limit="20" data-stars="별점">
+    <div class="st-dl-top">
+      <h2 class="st-h">평가 목록</h2>
+      <button class="st-dl-rf" type="button">↻ 새로고침</button>
+    </div>
+    <div class="st-dl-out" aria-live="polite"></div>
+  </section>
+  <section class="st-sec st-dstat" data-st="dstat" data-tab="평점" data-api="https://script.google.com/macros/s/AKfycbxNySsIoj56Tihu5FfLpKPdc-dL04_Sb3jjz2s91q4zmnEGEnWiijH5owYNgE-YJPdncw/exec" data-calc="avg" data-field="별점" data-group="항목" data-unit="점">
+    <h2 class="st-h">항목별 평균 별점</h2>
     <div class="st-ds-out" aria-live="polite"></div>
   </section>
 </div>
+</main>
 
 <script data-studio="js">
 (function () {
